@@ -12,6 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-fugitive'
 Plugin 'slashmili/alchemist.vim'
+Plugin 'Chiel92/vim-autoformat'
+
+let g:formatterpath = [ '/usr/local/Cellar/astyle/3.0' ]
+
+noremap <C-F> :Autoformat<CR>
 
 " -- VUNDLE END
 call vundle#end()
@@ -73,6 +78,7 @@ set list
 set ruler
 
 command! Wq wq
+command! Q q
 
 :imap ` <Esc>
 
