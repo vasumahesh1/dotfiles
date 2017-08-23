@@ -1,15 +1,28 @@
 #!/usr/bin/env bash
 
+# Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Update
 brew update
 
+# Languages
 brew install elixir
 brew install lua
-brew install grep
+
+# HTTP & Web stuff
 brew install wget --with-iri
+
+# Search tools
 brew install the_silver_searcher
+brew install grep
+
+# Latest Tmux
 brew install tmux
-brew install cmake
+
+# Formatter for C++
 brew install astyle
+
+# Reddit on Terminal
+brew install rtv
 
